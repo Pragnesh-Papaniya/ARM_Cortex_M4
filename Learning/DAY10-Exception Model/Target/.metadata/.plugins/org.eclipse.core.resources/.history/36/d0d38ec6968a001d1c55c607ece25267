@@ -1,0 +1,20 @@
+#include <stdint.h>
+#include <stdio.h>
+int function_add(int a,int b,int c,int d);
+
+int function_add(int a,int b,int c,int d);
+{
+	int sum;
+	sum=a+b+c+d;
+	return sum;
+}
+
+int main(void)
+{
+
+	int sum;
+	sum=function_add(1,2,3,4);
+    printf("Sum of two numbers %d \n",sum);
+    fflush(stdout);
+	return 0;
+}
