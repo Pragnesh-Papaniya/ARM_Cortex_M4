@@ -1,0 +1,10 @@
+09:42:48 **** Incremental Build of configuration Debug for project linker ****
+make -j8 all 
+arm-none-eabi-size   linker.elf 
+   text	   data	    bss	    dec	    hex	filename
+    780	     12	   1564	   2356	    934	linker.elf
+Finished building: default.size.stdout
+ 
+
+09:42:48 Build Finished. 0 errors, 0 warnings. (took 411ms)
+

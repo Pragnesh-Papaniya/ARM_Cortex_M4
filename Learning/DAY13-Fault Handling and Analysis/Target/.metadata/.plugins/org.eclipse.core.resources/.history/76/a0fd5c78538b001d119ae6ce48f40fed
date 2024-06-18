@@ -1,0 +1,19 @@
+
+#include <stdint.h>
+#include <stdio.h>
+
+int function_add(int a,int b,int c,int d);
+
+int function_add(int a,int b,int c,int d)
+{
+	int sum;
+	sum=a+b+c+d;
+	return sum;
+}
+int main(void)
+{
+ int sum;
+ sum=function_add(int a,int b,int c,int d);
+ return 0;
+
+}

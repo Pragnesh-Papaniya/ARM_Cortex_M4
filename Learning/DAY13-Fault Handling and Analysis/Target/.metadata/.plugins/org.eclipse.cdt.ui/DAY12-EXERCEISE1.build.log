@@ -1,0 +1,31 @@
+16:27:21 **** Incremental Build of configuration Debug for project DAY12-EXERCEISE1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:7:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    7 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:23:17: warning: unused variable 'pSHCSR' [-Wunused-variable]
+   23 |       uint32_t *pSHCSR =(uint32_t *)0xe000ed24;
+      |                 ^~~~~~
+../Src/main.c: In function 'UsageFault_Handler':
+../Src/main.c:64:17: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+   64 |  printf("CFSR= %x\n: ",(*pCFSR)&0xffff);
+      |                ~^      ~~~~~~~~~~~~~~~
+      |                 |              |
+      |                 unsigned int   long unsigned int
+      |                %lx
+arm-none-eabi-gcc -o "DAY12-EXERCEISE1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Dell\Desktop\ESD ARMCORTEXM4-DEMO\Target\DAY12-EXERCEISE1\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DAY12-EXERCEISE1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DAY12-EXERCEISE1.elf
+ 
+arm-none-eabi-size   DAY12-EXERCEISE1.elf 
+arm-none-eabi-objdump -h -S  DAY12-EXERCEISE1.elf  > "DAY12-EXERCEISE1.list"
+   text	   data	    bss	    dec	    hex	filename
+   5792	    108	   1588	   7488	   1d40	DAY12-EXERCEISE1.elf
+Finished building: default.size.stdout
+ 
+Finished building: DAY12-EXERCEISE1.list
+ 
+
+16:27:22 Build Finished. 0 errors, 3 warnings. (took 530ms)
+

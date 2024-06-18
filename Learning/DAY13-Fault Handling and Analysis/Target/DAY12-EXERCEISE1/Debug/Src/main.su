@@ -1,0 +1,6 @@
+../Src/main.c:11:5:hard	24	static
+../Src/main.c:20:5:main	24	static
+../Src/main.c:41:6:HardFault_Handler	8	static
+../Src/main.c:47:6:MemManage_Handler	8	static
+../Src/main.c:52:6:BusFault_Handler	8	static
+../Src/main.c:58:6:UsageFault_Handler	16	static

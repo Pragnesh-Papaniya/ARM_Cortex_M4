@@ -1,0 +1,19 @@
+
+#include <stdint.h>
+
+
+
+int main(void)
+{
+	//Enable the Fault
+	uint32_t *pSHCSR = (uint32_t*)0xe000ed24;
+
+	//Enable the fault
+	*pSHCSR |= (1<<18); //usage fault
+	*pSHCSR |= (1<<17); //Bus fault
+	*pSHCSR |= (1<<16); //Mem fault
+
+
+
+	for(;;);
+}
