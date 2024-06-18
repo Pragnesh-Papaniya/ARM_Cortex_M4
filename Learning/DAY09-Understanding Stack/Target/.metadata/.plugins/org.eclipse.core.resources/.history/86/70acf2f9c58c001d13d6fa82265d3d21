@@ -1,0 +1,14 @@
+
+#include <stdint.h>
+
+
+int main(void)
+{
+    //1.Manually Pend the Pending Bit for the USART3 IRQ number in NVIC
+
+	//2.Enable the USART3 IRQ number in NVIC
+
+
+
+	for(;;);
+}
