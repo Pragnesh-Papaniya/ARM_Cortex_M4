@@ -1,0 +1,10 @@
+09:25:39 **** Incremental Build of configuration Debug for project GPIO Interrupt ****
+make -j8 all 
+arm-none-eabi-size  GPIO\ Interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3512	    120	   1904	   5536	   15a0	GPIO Interrupt.elf
+Finished building: default.size.stdout
+ 
+
+09:25:39 Build Finished. 0 errors, 0 warnings. (took 240ms)
+
