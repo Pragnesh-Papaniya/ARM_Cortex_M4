@@ -1,0 +1,38 @@
+10:19:04 **** Incremental Build of configuration Debug for project UART Interrupt ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:96:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   96 |         printf("transmit 'a' to turn ON LED \n");
+      |         ^~~~~~
+../Src/main.c:3:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    2 | #include <stdint.h>
+  +++ |+#include <stdio.h>
+    3 | 
+../Src/main.c:96:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   96 |         printf("transmit 'a' to turn ON LED \n");
+      |         ^~~~~~
+../Src/main.c:96:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c: In function 'USART2_IRQHandler':
+../Src/main.c:113:18: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  113 |                  printf("LED on, Data is  %c \n", ch);
+      |                  ^~~~~~
+../Src/main.c:113:18: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:118:18: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  118 |                  printf("LED off, Data is  %c \n", ch);
+      |                  ^~~~~~
+../Src/main.c:118:18: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "UART Interrupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pragn\OneDrive\Desktop\GitHub\ARM_Cortex_M4\Learning\DAY16-Interrupts\UART Interrupt\UART Interrupt\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART Interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART Interrupt.elf
+ 
+arm-none-eabi-size  UART\ Interrupt.elf 
+arm-none-eabi-objdump -h -S UART\ Interrupt.elf  > "UART Interrupt.list"
+   text	   data	    bss	    dec	    hex	filename
+   5736	    136	   1904	   7776	   1e60	UART Interrupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART Interrupt.list
+ 
+
+10:19:04 Build Finished. 0 errors, 4 warnings. (took 581ms)
+
