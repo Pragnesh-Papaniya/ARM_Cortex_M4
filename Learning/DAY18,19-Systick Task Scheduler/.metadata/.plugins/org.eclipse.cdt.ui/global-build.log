@@ -1,0 +1,31 @@
+17:59:33 **** Incremental Build of configuration Debug for project Round Robin Task Scheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:284:25: warning: return type defaults to 'int' [-Wimplicit-int]
+  284 | __attribute__((naked))  SysTick_Handler(void)
+      |                         ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Round Robin Task Scheduler.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pragn\OneDrive\Desktop\GitHub\ARM_Cortex_M4\Learning\DAY18,19-Systick Task Scheduler\Round Robin Task Scheduler\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Round Robin Task Scheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Round Robin Task Scheduler.elf
+ 
+arm-none-eabi-size  Round\ Robin\ Task\ Scheduler.elf 
+arm-none-eabi-objdump -h -S Round\ Robin\ Task\ Scheduler.elf  > "Round Robin Task Scheduler.list"
+   text	   data	    bss	    dec	    hex	filename
+   4340	     96	   1984	   6420	   1914	Round Robin Task Scheduler.elf
+Finished building: default.size.stdout
+ 
+Finished building: Round Robin Task Scheduler.list
+ 
+17:59:37 **** Incremental Build of configuration Debug for project Round Robin Task Scheduler ****
+make -j8 all 
+arm-none-eabi-size  Round\ Robin\ Task\ Scheduler.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4340	     96	   1984	   6420	   1914	Round Robin Task Scheduler.elf
+Finished building: default.size.stdout
+ 
+18:01:55 **** Incremental Build of configuration Debug for project Round Robin Task Scheduler ****
+make -j8 all 
+arm-none-eabi-size  Round\ Robin\ Task\ Scheduler.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4340	     96	   1984	   6420	   1914	Round Robin Task Scheduler.elf
+Finished building: default.size.stdout
+ 
