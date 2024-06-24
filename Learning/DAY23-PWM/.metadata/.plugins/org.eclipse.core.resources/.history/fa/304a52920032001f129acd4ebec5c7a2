@@ -1,0 +1,12 @@
+#include "stm32f4xx.h"
+#include <stdint.h>
+
+int main(void)
+{
+	RCC->AHB1ENR |= 0x01;
+	RCC->APB1ENR |= 0x01;
+	GPIOA->MODER |= 0x00000800;
+	GPIOA->AFR[0] |= 0x00100000;
+    /* Loop forever */
+	for(;;);
+}
