@@ -1,0 +1,70 @@
+12:11:59 **** Incremental Build of configuration Debug for project Bluetooth Based Home Automation ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/pragn/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/pragn/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Bluetooth Based Home Automation.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pragn\OneDrive\Desktop\GitHub\ARM_Cortex_M4\Projects\Bluetooth Based Home Automation\Bluetooth Based Home Automation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Bluetooth Based Home Automation.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Bluetooth Based Home Automation.elf
+ 
+arm-none-eabi-size  Bluetooth\ Based\ Home\ Automation.elf 
+arm-none-eabi-objdump -h -S Bluetooth\ Based\ Home\ Automation.elf  > "Bluetooth Based Home Automation.list"
+   text	   data	    bss	    dec	    hex	filename
+   5312	     92	   1900	   7304	   1c88	Bluetooth Based Home Automation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Bluetooth Based Home Automation.list
+ 
+12:12:25 **** Incremental Build of configuration Debug for project Bluetooth Based Home Automation ****
+make -j8 all 
+arm-none-eabi-size  Bluetooth\ Based\ Home\ Automation.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5312	     92	   1900	   7304	   1c88	Bluetooth Based Home Automation.elf
+Finished building: default.size.stdout
+ 
+12:18:04 **** Incremental Build of configuration Debug for project Bluetooth Based Home Automation ****
+make -j8 all 
+arm-none-eabi-size  Bluetooth\ Based\ Home\ Automation.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5312	     92	   1900	   7304	   1c88	Bluetooth Based Home Automation.elf
+Finished building: default.size.stdout
+ 
+12:37:10 **** Incremental Build of configuration Debug for project Bluetooth Based Home Automation ****
+make -j8 all 
+arm-none-eabi-size  Bluetooth\ Based\ Home\ Automation.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5312	     92	   1900	   7304	   1c88	Bluetooth Based Home Automation.elf
+Finished building: default.size.stdout
+ 
+12:39:18 **** Incremental Build of configuration Debug for project Bluetooth Based Home Automation ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/pragn/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/pragn/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Bluetooth Based Home Automation.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pragn\OneDrive\Desktop\GitHub\ARM_Cortex_M4\Projects\Bluetooth Based Home Automation\Bluetooth Based Home Automation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Bluetooth Based Home Automation.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Bluetooth Based Home Automation.elf
+ 
+arm-none-eabi-size  Bluetooth\ Based\ Home\ Automation.elf 
+arm-none-eabi-objdump -h -S Bluetooth\ Based\ Home\ Automation.elf  > "Bluetooth Based Home Automation.list"
+   text	   data	    bss	    dec	    hex	filename
+   5312	     92	   1900	   7304	   1c88	Bluetooth Based Home Automation.elf
+Finished building: default.size.stdout
+ 
+Finished building: Bluetooth Based Home Automation.list
+ 
+12:48:12 **** Incremental Build of configuration Debug for project Bluetooth Based Home Automation ****
+make -j8 all 
+arm-none-eabi-size  Bluetooth\ Based\ Home\ Automation.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5312	     92	   1900	   7304	   1c88	Bluetooth Based Home Automation.elf
+Finished building: default.size.stdout
+ 
+12:48:30 **** Incremental Build of configuration Debug for project Bluetooth Based Home Automation ****
+make -j8 all 
+arm-none-eabi-size  Bluetooth\ Based\ Home\ Automation.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5312	     92	   1900	   7304	   1c88	Bluetooth Based Home Automation.elf
+Finished building: default.size.stdout
+ 
+12:53:16 **** Incremental Build of configuration Debug for project Bluetooth Based Home Automation ****
+make -j8 all 
+arm-none-eabi-size  Bluetooth\ Based\ Home\ Automation.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5312	     92	   1900	   7304	   1c88	Bluetooth Based Home Automation.elf
+Finished building: default.size.stdout
+ 

@@ -1,0 +1,10 @@
+12:53:16 **** Incremental Build of configuration Debug for project Bluetooth Based Home Automation ****
+make -j8 all 
+arm-none-eabi-size  Bluetooth\ Based\ Home\ Automation.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5312	     92	   1900	   7304	   1c88	Bluetooth Based Home Automation.elf
+Finished building: default.size.stdout
+ 
+
+12:53:17 Build Finished. 0 errors, 0 warnings. (took 161ms)
+
