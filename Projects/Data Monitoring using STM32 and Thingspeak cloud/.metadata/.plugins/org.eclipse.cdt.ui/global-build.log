@@ -1,0 +1,35 @@
+14:18:03 **** Build of configuration Debug for project Data Monitoring using STM32 and Thingspeak cloud ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/pragn/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/pragn/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/main.c: In function 'main':
+../Src/main.c:178:18: warning: unused variable 'data' [-Wunused-variable]
+  178 |             char data;
+      |                  ^~~~
+arm-none-eabi-gcc -o "Data Monitoring using STM32 and Thingspeak cloud.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pragn\OneDrive\Desktop\GitHub\ARM_Cortex_M4\Projects\Data Monitoring using STM32 and Thingspeak cloud\Data Monitoring using STM32 and Thingspeak cloud\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Data Monitoring using STM32 and Thingspeak cloud.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Data Monitoring using STM32 and Thingspeak cloud.elf
+ 
+arm-none-eabi-size  Data\ Monitoring\ using\ STM32\ and\ Thingspeak\ cloud.elf 
+arm-none-eabi-objdump -h -S Data\ Monitoring\ using\ STM32\ and\ Thingspeak\ cloud.elf  > "Data Monitoring using STM32 and Thingspeak cloud.list"
+   text	   data	    bss	    dec	    hex	filename
+   5984	    392	   1912	   8288	   2060	Data Monitoring using STM32 and Thingspeak cloud.elf
+Finished building: default.size.stdout
+ 
+Finished building: Data Monitoring using STM32 and Thingspeak cloud.list
+ 
+14:20:06 **** Incremental Build of configuration Debug for project Data Monitoring using STM32 and Thingspeak cloud ****
+make -j8 all 
+arm-none-eabi-size  Data\ Monitoring\ using\ STM32\ and\ Thingspeak\ cloud.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5984	    392	   1912	   8288	   2060	Data Monitoring using STM32 and Thingspeak cloud.elf
+Finished building: default.size.stdout
+ 
+14:21:17 **** Incremental Build of configuration Debug for project Data Monitoring using STM32 and Thingspeak cloud ****
+make -j8 all 
+arm-none-eabi-size  Data\ Monitoring\ using\ STM32\ and\ Thingspeak\ cloud.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5984	    392	   1912	   8288	   2060	Data Monitoring using STM32 and Thingspeak cloud.elf
+Finished building: default.size.stdout
+ 
